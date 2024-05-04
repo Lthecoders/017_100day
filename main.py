@@ -3,7 +3,6 @@ from getpass import getpass as input
 intro = ("--------E P I C  🪨  📃 ✂️   B A T T L E-------- ")
 print(intro.center(100))
 
-
 print(
     "\033[35m",
     "\n---->it's AN 3 POINTS MATCH. The PLAYER WHO SCORES FIRST 3 POINTS shall win!!! <----",
@@ -15,18 +14,24 @@ round = 0
 # player1_score < 2 or player2_score < 2
 while True:
   if player1_score == 3:
-    print("\033[33m", "\n\n----->player 1 had reached at 3 points first. therefore player 1 WON 🥳🥳", "\033[0m")
+    print(
+        "\033[33m",
+        "\n\n----->player 1 had reached at 3 points first. therefore player 1 WON 🥳🥳",
+        "\033[0m")
     break
   elif player2_score == 3:
-    print("\033[34m", "\n\n----->player 2 had reached at 3 points first. therefore player 2 WON 🥳🥳", "\033[0m")
+    print(
+        "\033[34m",
+        "\n\n----->player 2 had reached at 3 points first. therefore player 2 WON 🥳🥳",
+        "\033[0m")
     break
 
   round = round + 1
   print(f"\n\n------------> ROUND {round} <-------------------\n")
 
   print("select your move Rock, Paper or Scissor (pleas enter R, P or S)\n")
-  player_1 = input("\033[33m"+"\nenter your move player 1 ---> "+"\033[0m")
-  player_2 = input("\033[34m"+"\nenter your move player 2 ---> "+"\033[0m")
+  player_1 = input("\033[33m" + "\nenter your move player 1 ---> " + "\033[0m")
+  player_2 = input("\033[34m" + "\nenter your move player 2 ---> " + "\033[0m")
 
   if (player_1 == "R" or player_1 == "r") and (player_2 == "R"
                                                or player_2 == "r"):
@@ -90,7 +95,6 @@ while True:
         "WRONG INPUT, make sure both players put (R, P or S or it's corresponding lowercase ONLY)",
         "\033[0m")
     print(
-      f"player 1 score = {player1_score}\nplayer 2 score = {player2_score}")
-
+        f"player 1 score = {player1_score}\nplayer 2 score = {player2_score}")
 
 print("\nthanks for playing the game😁😁")
